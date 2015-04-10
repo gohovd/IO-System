@@ -10,9 +10,11 @@ public class Harddisk {
     public Harddisk() {
 
     }
-        public void write(ArrayList text) {ArrayList<String> text = new ArrayList();
+        public void write(ArrayList text, String filename) {
+            //fjerne siste ordet i setningen (dvs filnavnet!)
+            text.remove(text.size()-1);
             try {
-                File file = new File("example.txt");
+                File file = new File(filename);
                 BufferedWriter output = new BufferedWriter(new FileWriter(file,true));
                 for(Object s : text) {
                     String txt = s.toString();

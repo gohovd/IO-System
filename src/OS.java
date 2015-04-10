@@ -25,8 +25,8 @@ public class OS {
 
     System.out.print("What would you like to do? > ");
     String inputString = input.nextLine();
-    System.out.print("You entered: ");
-    System.out.println(inputString);
+    //System.out.print("You entered: ");
+    //System.out.println(inputString);
         textToSend = inputString;
 
 
