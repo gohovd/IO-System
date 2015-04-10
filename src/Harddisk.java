@@ -14,8 +14,4 @@ public class Harddisk {
         }
     }
 
-    public void createFile(){
-
-    }
-
 }
