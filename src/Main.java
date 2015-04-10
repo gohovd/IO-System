@@ -6,8 +6,12 @@ public class Main {
 
         OS opsys = new OS();
         Driver d = new Driver();
+        Harddisk hdd = new Harddisk();
+
         opsys.enterInput();
         opsys.sendToDriver(d);
+        d.writeToDisk(hdd);
+
     }
 
 }

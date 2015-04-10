@@ -12,12 +12,11 @@ public class Driver {
         String[] split = string.split(" ");
         for(String s : split) {
             text.add(s);
-            System.out.println(s);
         }
     }
 
-    private void writeToDisk(ArrayList text, Harddisk d){
-        //d.write(text);
+    public void writeToDisk(Harddisk d){
+        d.write(text);
     }
 
 }
