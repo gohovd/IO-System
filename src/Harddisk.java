@@ -34,7 +34,7 @@ public class Harddisk {
                 System.out.println(str + "\n");
             }
         } catch (IOException e) {
-            System.out.println("something went wronk");
+            System.out.println("something went wrong");
         }
     }
 
