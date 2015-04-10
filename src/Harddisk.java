@@ -1,8 +1,11 @@
 import java.io.*;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
 
 public class Harddisk {
+    List<String> list;
 
     public Harddisk() {
 
@@ -22,7 +25,7 @@ public class Harddisk {
             }
         }
 
-    public void read(ArrayList filename){
+    public void read(String filename){
         String str = null;
         try{
             BufferedReader in = new BufferedReader(new FileReader(filename));
@@ -32,6 +35,20 @@ public class Harddisk {
         } catch (IOException e) {
             System.out.println("something went wronk");
         }
+    }
+
+    public void seek(String word, String filename){
+        Scanner scanner = new Scanner(filename);
+        list = new ArrayList<>();
+        while(scanner.hasNextLine()){
+            list.add(scanner.nextLine());
+        }
+        if(list.contains(word)){
+            //print filename where the word can be found and line?
+        }else{
+            //nothing found
+        }
+
     }
 
 }
