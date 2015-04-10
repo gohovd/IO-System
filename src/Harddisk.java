@@ -5,14 +5,13 @@ import java.util.Scanner;
 
 
 public class Harddisk {
-    List<String> list;
 
     public Harddisk() {
 
     }
         public void write(ArrayList text, String filename) {
             //fjerne siste ordet i setningen (dvs filnavnet!)
-            text.remove(0);
+            text.remove(text.size()-1);
             try {
                 File file = new File(filename);
                 BufferedWriter output = new BufferedWriter(new FileWriter(file,true));
@@ -41,16 +40,14 @@ public class Harddisk {
 
     public void seek(String word, String filename){
         Scanner scanner = new Scanner(filename);
-        list = new ArrayList<>();
+        List<String> list = new ArrayList<>();
         while(scanner.hasNextLine()){
             list.add(scanner.nextLine());
         }
         if(list.contains(word)){
-            //print filename where the word can be found and line?
-            System.out.println(word);
+            System.out.println("The word '" + word +"' was found in" + filename);
         }else{
-            //nothing found
-            System.out.println("Couldn't find it stronk mistake much wow :'''(");
+            System.out.println("Found nothing stronk");
         }
 
     }
