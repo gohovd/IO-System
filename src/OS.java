@@ -1,30 +1,26 @@
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class OS {
 
-    Scanner keyboard = new Scanner(System.in);
 
 
 public static void OS(String args[]){
 
-    Scanner scan= new Scanner(System.in);
+    //Scanner example
+    Scanner input = new Scanner(System.in);
+    System.out.print("Enter something > ");
+    String inputString = input.nextLine();
+    System.out.print("You entered : ");
+    System.out.println(inputString);
 
-    //For string
-
-    String text= scan.nextLine();
-
-    System.out.println(text);
-
-    //for int
-
-    int num= scan.nextInt();
-
-    System.out.println(num);
-
-
+    //JOptionPane example
+    String input2 = JOptionPane.showInputDialog(null, "Enter some text:");
+    JOptionPane.showMessageDialog(null, "You entered " + input);
 
     }
 
 
 
 }
+
