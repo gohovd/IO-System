@@ -10,7 +10,7 @@ public class Harddisk {
     public Harddisk() {
 
     }
-        public void write(ArrayList text) {
+        public void write(ArrayList text) {ArrayList<String> text = new ArrayList();
             try {
                 File file = new File("example.txt");
                 BufferedWriter output = new BufferedWriter(new FileWriter(file,true));
