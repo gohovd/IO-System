@@ -21,7 +21,7 @@ public class Harddisk {
                 }
                 output.close();
             } catch (IOException e) {
-                e.printStackTrace();
+                System.out.println("Oh no, stronk mistakes were made");
             }
         }
 
