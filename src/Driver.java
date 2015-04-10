@@ -2,6 +2,17 @@
 public class Driver {
 
     public Driver() {
-        String supa = "SUPADRIVEWR";
+    }
+
+    public void read(){
+
+    }
+
+    public void write(){
+
+    }
+
+    public void seek(){
+
     }
 }
