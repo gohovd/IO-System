@@ -1,26 +1,21 @@
 import java.util.Scanner;
 
+
 public class OS {
 
-    Scanner keyboard = new Scanner(System.in);
+    public OS(){
+
+    }
 
 
-public static void OS(String args[]){
+    public void enterInput(){
 
-    Scanner scan= new Scanner(System.in);
-
-    //For string
-
-    String text= scan.nextLine();
-
-    System.out.println(text);
-
-    //for int
-
-    int num= scan.nextInt();
-
-    System.out.println(num);
-
+    //Scanner example
+    Scanner input = new Scanner(System.in);
+    System.out.print("Enter something > ");
+    String inputString = input.nextLine();
+    System.out.print("You entered : ");
+    System.out.println(inputString);
 
 
     }
@@ -28,3 +23,4 @@ public static void OS(String args[]){
 
 
 }
+
