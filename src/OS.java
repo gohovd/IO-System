@@ -1,11 +1,14 @@
 import java.util.Scanner;
-import javax.swing.JOptionPane;
+
 
 public class OS {
 
+    public OS(){
+
+    }
 
 
-public static void OS(String args[]){
+    public void enterInput(){
 
     //Scanner example
     Scanner input = new Scanner(System.in);
@@ -14,9 +17,6 @@ public static void OS(String args[]){
     System.out.print("You entered : ");
     System.out.println(inputString);
 
-    //JOptionPane example
-    String input2 = JOptionPane.showInputDialog(null, "Enter some text:");
-    JOptionPane.showMessageDialog(null, "You entered " + input);
 
     }
 

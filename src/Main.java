@@ -1,7 +1,11 @@
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args){
-        OS opsy = new OS();
+
+        OS opsys = new OS();
+        opsys.enterInput();
     }
+
 }
