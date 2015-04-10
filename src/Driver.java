@@ -8,7 +8,7 @@ public class Driver {
 
     }
 
-    private void convertInput(String string){
+    public void convertInput(String string){
         String[] split = string.split(" ");
         for(String s : split) {
             text.add(s);
