@@ -25,10 +25,10 @@ public class Driver {
         }
         text.remove(0);
         if(write) {
-            writeToDisk(instance, text.get(text.size()-1));
+            writeToDisk(instance, text.get(0));
         }
-        if(read) { readFromDisk(instance, text.get(1)); }
-        if(seek) { seekOnDisk(instance, text.get(1), text.get(2)); }
+        if(read) { readFromDisk(instance, text.get(0)); }
+        if(seek) { seekOnDisk(instance, text.get(0), text.get(1)); }
 
     }
 

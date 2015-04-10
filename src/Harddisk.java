@@ -12,7 +12,7 @@ public class Harddisk {
     }
         public void write(ArrayList text, String filename) {
             //fjerne siste ordet i setningen (dvs filnavnet!)
-            text.remove(text.size()-1);
+            text.remove(0);
             try {
                 File file = new File(filename);
                 BufferedWriter output = new BufferedWriter(new FileWriter(file,true));
@@ -47,8 +47,10 @@ public class Harddisk {
         }
         if(list.contains(word)){
             //print filename where the word can be found and line?
+            System.out.println(word);
         }else{
             //nothing found
+            System.out.println("Couldn't find it stronk mistake much wow :'''(");
         }
 
     }
