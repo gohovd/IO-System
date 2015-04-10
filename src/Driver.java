@@ -17,7 +17,7 @@ public class Driver {
     }
 
     private void writeToDisk(ArrayList text, Harddisk d){
-
+        //d.write(text);
     }
 
 }
