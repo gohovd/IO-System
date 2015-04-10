@@ -27,7 +27,7 @@ public class OS {
     String inputString = input.nextLine();
     System.out.print("You entered: ");
     System.out.println(inputString);
-        textToSend = inputString;;
+        textToSend = inputString;
 
 
     }
